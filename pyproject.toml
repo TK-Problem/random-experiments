@@ -1,0 +1,13 @@
+[project]
+name = "random-experiments"
+version = "0.1.0"
+description = "created for 1st notebook"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "pandas>=3.0.1",
+    "pymc>=5.28.1",
+    "scikit-learn>=1.8.0",
+    "yfinance>=1.2.0",
+]
