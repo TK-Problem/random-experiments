@@ -2,6 +2,12 @@
 
 A collection of small ML/statistics experiments in Jupyter notebooks. All experimetns can be run via google colab.
 
+## Notebooks
+
+| # | Notebook | Description |
+|---|----------|-------------|
+| 001 | `001_bayesian_linear_model.ipynb` | Bayesian linear regression on SPY daily returns using PyMC |
+
 ---
 
 ## Local setup with uv
@@ -25,19 +31,11 @@ Create the virtual environment and install dependencies
 uv sync
 ```
 
-`uv sync` reads `pyproject.toml`, creates a `.venv` with Python 3.13 (pinned in
-`.python-version`), and installs all dependencies from `uv.lock`.
+`uv sync` reads `pyproject.toml`, creates a `.venv` with Python 3.13 (pinned in `.python-version`), and installs all dependencies from `uv.lock`.
 
 Register the environment as a Jupyter kernel
 
 ```bash
 uv run python -m ipykernel install --user --name random-experiments --display-name "random-experiments"
 ```
-
 ---
-
-## Notebooks
-
-| # | Notebook | Description |
-|---|----------|-------------|
-| 001 | `001_bayesian_linear_model.ipynb` | Bayesian linear regression on SPY daily returns using PyMC |
